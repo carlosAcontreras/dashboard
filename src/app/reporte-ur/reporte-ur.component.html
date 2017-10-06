@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="input-field col s6">
+      <i class="material-icons prefix">event</i>
+      <input id="txtFechaInicio" type="text" class="datepicker">
+      <label for="txtFechaInicio">Fecha Inicio</label>
+    </div>
+
+    <div class="input-field col s6">
+      <i class="material-icons prefix">event</i>
+      <input id="txtFechaFin" type="text" class="datepicker">
+      <label for="txtFechaFin">Fecha Fin</label>
+    </div>
+
+    <div class="input-field col s6">
+      <i class="material-icons prefix">business</i>
+      <input type="text" id="txtComite" class="autocomplete">
+      <label for="txtComite">Comite</label>
+    </div>
+
+    <div class="input-field col s6">
+      <a class="waves-effect waves-light btn" id="btnConsultar">Consultar</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s4"><a class="active" href="#tbOGV">OGV</a></li>
+        <li class="tab col s4"><a href="#tbOGE">OGE</a></li>
+        <li class="tab col s4"><a href="#tbOGT">OGT</a></li>
+      </ul>
+    </div>
+    <div id="tbOGV" class="col s12">
+      
+    </div>
+    <div id="tbOGE" class="col s12"></div>
+    <div id="tbOGT" class="col s12">
+      <table id="tblEjemplo" class="display" cellspacing="0" width="100%">
+          <thead>
+              <tr>
+                  <th>Curso</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let curso of cursos">
+                <td>{{ curso }}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
